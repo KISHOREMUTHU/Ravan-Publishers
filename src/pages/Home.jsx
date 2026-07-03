@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Anthology from "../components/Anthology";
 import About from "../components/About";
 import Books from "../components/Books";
 import Partners from "../components/Partners";
@@ -13,6 +14,7 @@ export default function Home() {
     <div className="bg-slate-950 text-slate-100">
       <Navbar />
       <main className="pt-24">
+        <Anthology />
         <Hero />
         <About />
         <Books />
