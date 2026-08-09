@@ -1,6 +1,6 @@
 import React from "react";
 
-const anthologyImage = new URL("../assets/anthology.jpeg", import.meta.url).href;
+const anthologyImage = new URL("../assets/head1.jpeg", import.meta.url).href;
 
 export default function Anthology() {
   return (

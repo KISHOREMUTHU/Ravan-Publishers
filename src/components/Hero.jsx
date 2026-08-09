@@ -1,6 +1,8 @@
 import React from "react";
 
-const heroImage = new URL("../assets/ravan.png", import.meta.url).href;
+const head1 = new URL("../assets/head1.jpeg", import.meta.url).href;
+const head2 = new URL("../assets/head2.jpeg", import.meta.url).href;
+const head3 = new URL("../assets/head3.jpeg", import.meta.url).href;
 
 export default function Hero() {
   return (
@@ -25,12 +27,13 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative hidden lg:block lg:min-w-[460px] lg:max-w-[520px] lg:max-h-[520px]">
-          <div className="relative overflow-hidden rounded-[4rem] border border-white/10 bg-slate-900/90 shadow-2xl shadow-slate-950/40">
-            <div className="aspect-[4/5] w-full bg-slate-950 p-6">
-              <img src={heroImage} alt="Ravan Publishers logo" className="h-full w-full object-contain" />
-            </div>
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
+        <div className="relative hidden lg:flex lg:min-w-[460px] lg:max-w-[520px] gap-4 items-start">
+          <div className="flex flex-col gap-4 flex-1">
+            <img src={head1} alt="" className="w-full rounded-2xl object-cover shadow-xl" />
+            <img src={head2} alt="" className="w-full rounded-2xl object-cover shadow-xl" />
+          </div>
+          <div className="flex flex-col justify-center flex-1 mt-12">
+            <img src={head3} alt="" className="w-full rounded-2xl object-cover shadow-xl" />
           </div>
         </div>
       </div>
