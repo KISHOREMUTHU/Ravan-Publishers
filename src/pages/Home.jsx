@@ -7,6 +7,7 @@ import Books from "../components/Books";
 import Partners from "../components/Partners";
 import Testimonials from "../components/Testimonials";
 import Events from "../components/Events";
+import LatestLaunch from "../components/LatestLaunch";
 import Contact from "../components/Contact";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="pt-24">
         <Anthology />
         <Hero />
+        <LatestLaunch />
         <About />
         <Books />
         <Partners />
